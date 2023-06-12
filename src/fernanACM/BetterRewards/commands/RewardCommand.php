@@ -20,6 +20,10 @@ use fernanACM\BetterRewards\utils\PluginUtils;
 use fernanACM\BetterRewards\Loader;
 
 class RewardCommand extends BaseCommand{
+    
+    public function getPermission(){
+    return null;
+    }
 
     public function __construct(){
         parent::__construct(Loader::getInstance(), "betterrewards", "The best daily rewards by fernanACM", ["betterewards", "btrewards", "reward"]);
